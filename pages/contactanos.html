@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>KILU - Contactanos</title>
 </head>
 <body>
-    <header>
-        <h3 class="fondito">
-            <div>Retiro gratis en el showroom - Envios a todo el pais</div>
-        </h3>
-        <div class="header">
-            <h1 class="kilu">KILU</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./outlet.html">Outlet</a></li>
-                    <li><a href="./pregfrecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="./contactanos.html">Contactanos</a></li>
+    <header class="container-fluid">
+        <!-- barra de navegacion bootstrap -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="detalles-del-header">
+              <h1 class="navbar-brand kilu animate__animated animate__backInLeft">KILU</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapase navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll" id="animacion" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="text-black nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./outlet.html">OUTLET</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./pregfrecuentes.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./contactanos.html">Contactanos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+              </div>
+            </div>
+        </nav>
+      </header>
     <main>
         <form action="" method="post">
             <fieldset>
@@ -52,30 +67,52 @@
         </form>
     </main>
     <footer>
-        <h4>
-
-            <div>
-                <span> Nuestros locales: </span>
-                <ul>
+        <div class="container-fluid" id="footer">
+            <div class="row">
+              <div class="col-xs-12 col-lg-4">
+                <div>
+                  <span class="h4 fw-bold"> Nuestros locales: </span>
+                  <ul>
                     <li>San martin 2363 (Rosario)</li>
                     <li>Cordoba 792 (Rosario)</li>
                     <li>Mendoza 4289 (Rosario)</li>
                     <li>Avellaneda 2832 (Flores)</li>
-                </ul>
-            </div>
-
-            <div class="redes-sociales">
-                <span class="n-r-sociales">Nuestras redes sociales:</span>
-                <div class="logo-insta">
-                    <a href="https://www.instagram.com/"><img src="../images/logodeig.png" alt="logo de instagram" width="50 px" height="50 px"></a>
+                  </ul>
                 </div>
-                <div class="logo-tiktok">
-                    <a href="https://www.tiktok.com/"><img src="../images/logodetiktok.png" alt="logo de tiktok" width="50 px" height="50 px"></a>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <div>
+                  <span class="h4 fw-bold">Menu</span>
+                  <div class="d-flex flex-column align-items-start"id="lista">
+                    <a href="" class="text-black text-decoration-none">Inicio</a>
+                    <a href="" class="text-black text-decoration-none">Productos</a>
+                    <a href="" class="text-black text-decoration-none">Outlet</a>
+                    <a href="" class="text-black text-decoration-none">Preguntas frecuentes</a></li>
+                    <a href="" class="text-black text-decoration-none">Contactanos</a>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <div>
+                  <span class="h4 fw-bold">Nuestras redes sociales:</span>
+                  <div class="row d-flex justify-content-center mt-3">
+      
+                    <div class="col-lg-6">
+                      <a href="https://www.instagram.com/"><img src="../images/logodeig.png" alt="logo de instagram" width="50 px" height="50 px"></a>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <a href="https://www.tiktok.com/"><img src="../images/logodetiktok.png" alt="logo de tiktok" width="50 px" height="50 px"></a>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </h4>
+            </div>
+      
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>

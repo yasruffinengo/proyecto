@@ -4,65 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>KILU - Inicio</title>
 </head>
 <body>
-    <header>
-        <h3 class="fondito">
-            <div>Retiro gratis en el showroom - Envios a todo el pais</div>
-        </h3>
-        <div class="header">
-            <h1 class="kilu animate__animated animate__backInLeft">KILU</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/outlet.html">Outlet</a></li>
-                    <li><a href="./pages/pregfrecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="./pages/contactanos.html">Contactanos</a></li>
+    <header class="container-fluid">
+        <!-- barra de navegacion bootstrap -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="detalles-del-header">
+              <h1 class="navbar-brand kilu animate__animated animate__backInLeft">KILU</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapase navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll" id="animacion" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="text-black nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./pages/outlet.html">OUTLET</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./pages/pregfrecuentes.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-black nav-link" href="./pages/contactanos.html">Contactanos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h2>Productos destacados</h2>
-        <img src="./images/destacado1.jpg" alt="campera coke" width="500 px" height="250 px">
-        <h3>Chaqueta vintage COKE</h3>
+              </div>
+            </div>
+        </nav>
+      </header>
+    
+    
+      <main class="container-fluid">
+          <h2 class=>Productos destacados</h2>
+          <!-- CARRUSEL bootstrap-->
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner pbottom-50">
+              <div class="carousel-item active">
+                <img src="./images/destacado1.jpg" class="d-block w-100" alt="campera 1"  height="400px">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/destacado2.jpg" class="d-block w-100" alt="campera 2"  height="400px">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/destacado3.jpg" class="d-block w-100" alt="campera 3" height="400px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+      </main>
+    <footer> <!-- con bootstrap hecho por mi -->
 
-        <img src="./images/destacado2.jpg" alt="campera coke" width="500 px" height="250 px">
-        <h3>Campera snowbeach FILA</h3>
-
-        <img src="./images/destacado3.jpg" alt="campera coke" width="500 px" height="250 px">
-        <h3>Magic Line FILA</h3>
-        <br>
-    </main>
-    <footer>
-        <h4>
-
-            <div>
-                <span> Nuestros locales: </span>
+        <div class="container-fluid" id="footer">
+          <div class="row">
+            <div class="col-xs-12 col-lg-4">
+              <div>
+                <span class="h4 fw-bold"> Nuestros locales: </span>
                 <ul>
-                    <li>San martin 2363 (Rosario)</li>
-                    <li>Cordoba 792 (Rosario)</li>
-                    <li>Mendoza 4289 (Rosario)</li>
-                    <li>Avellaneda 2832 (Flores)</li>
+                  <li>San martin 2363 (Rosario)</li>
+                  <li>Cordoba 792 (Rosario)</li>
+                  <li>Mendoza 4289 (Rosario)</li>
+                  <li>Avellaneda 2832 (Flores)</li>
                 </ul>
+              </div>
             </div>
-
-            <div class="redes-sociales">
-                <span class="n-r-sociales">Nuestras redes sociales:</span>
-                <div class="logo-insta">
+            <div class="col-xs-12 col-lg-4">
+              <div>
+                <span class="h4 fw-bold">Menu</span>
+                <div class="d-flex flex-column align-items-start"id="lista">
+                  <a href="" class="text-black text-decoration-none">Inicio</a>
+                  <a href="" class="text-black text-decoration-none">Productos</a>
+                  <a href="" class="text-black text-decoration-none">Outlet</a>
+                  <a href="" class="text-black text-decoration-none">Preguntas frecuentes</a></li>
+                  <a href="" class="text-black text-decoration-none">Contactanos</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div>
+                <span class="h4 fw-bold">Nuestras redes sociales:</span>
+                <div class="row d-flex justify-content-center mt-3">
+    
+                  <div class="col-lg-6">
                     <a href="https://www.instagram.com/"><img src="./images/logodeig.png" alt="logo de instagram" width="50 px" height="50 px"></a>
-                </div>
-                <div class="logo-tiktok">
+                  </div>
+    
+                  <div class="col-lg-6">
                     <a href="https://www.tiktok.com/"><img src="./images/logodetiktok.png" alt="logo de tiktok" width="50 px" height="50 px"></a>
+                  </div>
+    
                 </div>
+              </div>
             </div>
-
-        </h4>
-    </footer>
+          </div>
+          </div>
+    
+    
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
 </body>
 </html>
