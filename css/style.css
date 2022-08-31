@@ -14,14 +14,7 @@ header h3{
     align-items: center;
 }
 
-.ropita{
-    font-size: small;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 
 .ropita div h3{ /*descripcion*/
     padding: 3%;
@@ -37,6 +30,11 @@ nav ul li{
     background-color: #5D536B;
     position: static;
     height: 14vh;
+}
+
+#main{
+    background: rgb(193,182,208);
+    background: linear-gradient(90deg, rgba(193,182,208,1) 0%, rgba(173,147,209,1) 47%, rgba(193,182,208,1) 100%);
 }
 
 #animacion li a{
@@ -56,3 +54,24 @@ nav ul li{
 #footer{
     background-color: #5D536B;
 }
+
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 576px) { /*de 992 para arriba?¿????*/
+    #columnas-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+
+@media (min-width: 1400px) { /*de 992 para arriba tambien?¿?¿ */
+    #columnas-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
