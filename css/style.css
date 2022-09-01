@@ -1,77 +1,26 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,100&display=swap');
-
-body{
-    font-family: "Noto sans";
-    background-color: #EAE3F3;
-}
-
-
-header h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.ropita div h3{ /*descripcion*/
-    padding: 3%;
-}
-
-/* CON BOOTSTRAPP HEADER Y FOOTER */
-
-nav ul li{
-    display: inline-block;
-}
-
-#detalles-del-header{
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,100&display=swap");
+body {
+  font-family: "Noto sans";
+  background-color: #EAE3F3; }
+  body header nav div {
     background-color: #5D536B;
     position: static;
-    height: 14vh;
-}
+    height: 14vh; }
+    body header nav div div ul li {
+      display: inline-block; }
+      body header nav div div ul li a {
+        text-decoration: none;
+        transition-property: all;
+        transition-duration: 300ms; }
+      body header nav div div ul li a:hover {
+        color: white; }
 
-#main{
-    background: rgb(193,182,208);
-    background: linear-gradient(90deg, rgba(193,182,208,1) 0%, rgba(173,147,209,1) 47%, rgba(193,182,208,1) 100%);
-}
+footer div {
+  background-color: #5D536B; }
+  footer div div div div div {
+    list-style-type: none a; }
 
-#animacion li a{
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 300ms;
-}
-
-#animacion li a:hover{
-    color: rgb(255, 255, 255);
-}
-
-#lista{
-    list-style-type: none
-}
-
-#footer{
-    background-color: #5D536B;
-}
-
-
-/* MEDIA QUERIES*/
-
-@media (min-width: 576px) { /*de 992 para arriba?¿????*/
-    #columnas-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    }
-
-@media (min-width: 1400px) { /*de 992 para arriba tambien?¿?¿ */
-    #columnas-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    }
+main {
+  background: #c1b6d0;
+  background: linear-gradient(90deg, #c1b6d0 0%, #ad93d1 47%, #c1b6d0 100%); }
