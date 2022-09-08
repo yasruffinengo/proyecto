@@ -1,0 +1,20 @@
+//fuente para KILU
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+//fuente para el contenido de la pagina font-family: 'Noto Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,100&display=swap');
+
+//la misma mas gruesita font-family: 'Noto Sans Balinese', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&family=Noto+Sans:ital,wght@1,300&display=swap');
+
+
+
+@import './mixin';
+@import './variables';
+
+@import './root';
+
+@import './header';
+@import './footer';
+@import './main-preguntas'
+

@@ -1,0 +1,16 @@
+//no la estoy usando
+@mixin tamaño-card{
+    width: 250;
+    height: 290;
+}
+
+@mixin background{
+    background: rgb(193,182,208);
+    background: linear-gradient(90deg, rgba(193,182,208,1) 0%, rgba(173,147,209,1) 47%, rgba(193,182,208,1) 100%);
+}
+
+@mixin subtitulos{
+    font-size:medium;
+    font-family: 'Noto Sans Balinese', sans-serif;
+}
+

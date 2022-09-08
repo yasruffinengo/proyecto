@@ -1,0 +1,51 @@
+//preguntas frecuentes
+main{
+    h1{
+        font-family: 'Noto Sans Balinese', sans-serif;
+    }
+    div{
+
+        div{
+            h3{
+                @include subtitulos;
+            }
+            p{
+                font-family: 'Noto Sans', sans-serif;
+            }
+        }
+
+    }
+
+}
+
+//contactanos
+main{
+    h1{
+        font-family: 'Noto Sans Balinese', sans-serif;
+    }
+    div{
+        div{
+            @include subtitulos;
+            label{
+            }
+            input{
+            }
+        }
+    }
+}
+
+//inicio, productos, outlet
+main{
+    h2{
+        font-family: 'Noto Sans Balinese', sans-serif;
+    }
+    div{
+        div{
+            div{
+                img{
+
+                }
+            }
+        }
+    }
+}

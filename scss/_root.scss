@@ -1,0 +1,8 @@
+body{
+    font-family: "Noto sans";
+    background-color: map-get($colores , "violeta" )
+}
+
+main{
+    @include background;
+}

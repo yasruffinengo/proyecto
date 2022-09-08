@@ -1,26 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&family=Noto+Sans:ital,wght@1,300&display=swap");
 body {
   font-family: "Noto sans";
-  background-color: #EAE3F3; }
-  body header nav div {
+  background-color: #5D536B; }
+
+main {
+  background: #c1b6d0;
+  background: linear-gradient(90deg, #c1b6d0 0%, #ad93d1 47%, #c1b6d0 100%); }
+
+header {
+  background-color: #5D536B; }
+  header nav div {
     background-color: #5D536B;
     position: static;
-    height: 14vh; }
-    body header nav div div ul li {
+    height: 12vh; }
+    header nav div a span {
+      font-family: Kaushan Script;
+      color: #989FCE; }
+    header nav div div ul li {
       display: inline-block; }
-      body header nav div div ul li a {
-        text-decoration: none;
-        transition-property: all;
-        transition-duration: 300ms; }
-      body header nav div div ul li a:hover {
-        color: white; }
 
 footer div {
   background-color: #5D536B; }
   footer div div div div div {
     list-style-type: none a; }
 
-main {
-  background: #c1b6d0;
-  background: linear-gradient(90deg, #c1b6d0 0%, #ad93d1 47%, #c1b6d0 100%); }
+main h1 {
+  font-family: 'Noto Sans Balinese', sans-serif; }
+
+main div div h3 {
+  font-size: medium;
+  font-family: 'Noto Sans Balinese', sans-serif; }
+
+main div div p {
+  font-family: 'Noto Sans', sans-serif; }
+
+main h1 {
+  font-family: 'Noto Sans Balinese', sans-serif; }
+
+main div div {
+  font-size: medium;
+  font-family: 'Noto Sans Balinese', sans-serif; }
+
+main h2 {
+  font-family: 'Noto Sans Balinese', sans-serif; }
