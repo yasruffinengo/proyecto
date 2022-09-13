@@ -24,7 +24,7 @@ header {
 footer div {
   background-color: #5D536B; }
   footer div div div div div {
-    list-style-type: none a; }
+    list-style-type: none; }
 
 main h1 {
   font-family: 'Noto Sans Balinese', sans-serif; }
@@ -45,3 +45,19 @@ main div div {
 
 main h2 {
   font-family: 'Noto Sans Balinese', sans-serif; }
+
+.datos {
+  background-color: #989FCE;
+  height: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+  .datos div img {
+    width: 100px;
+    height: 70px; }
+
+@media (max-width: 763px) {
+  .datos {
+    height: 35rem;
+    flex-direction: column; } }

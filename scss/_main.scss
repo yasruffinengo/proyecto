@@ -49,3 +49,18 @@ main{
         }
     }
 }
+
+//inicio
+.datos{
+    background-color: map-get($colores , "celeste" );
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    div{
+        img{
+            @include tamaño-icons
+        }
+    }
+}
