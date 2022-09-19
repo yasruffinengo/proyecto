@@ -52,15 +52,48 @@ main{
 
 //inicio
 .datos{
-    background-color: map-get($colores , "celeste" );
+    background-color: map-get($colores , "celeste");
     height: 12rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"candado tarjeta camion"
+                        "titulo-1 titulo-2 titulo-3"
+                        "subt-1 subt-2 subt-3";
+    .candado{
         img{
-            @include tamaño-icons
+            @include tamaño-icons;
+            grid-area: candado;
+        }
+        h3{
+            grid-area: titulo-1;
+        }
+        p{
+            grid-area: subt-1;
+        }
+    }
+    .tarjeta{
+        img{
+            @include tamaño-icons;
+            grid-area: tarjeta;
+        }
+        h3{
+            grid-area: titulo-2;
+        }
+        p{
+            grid-area: subt-2;
+        }
+    }
+    .camion{
+        img{
+            @include tamaño-icons;
+            grid-area: camion;
+        }
+        h3{
+            grid-area: titulo-3;
+        }
+        p{
+            grid-area: subt-3;
         }
     }
 }
