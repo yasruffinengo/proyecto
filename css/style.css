@@ -7,7 +7,8 @@ body {
 
 main {
   background: #c1b6d0;
-  background: linear-gradient(90deg, #c1b6d0 0%, #ad93d1 47%, #c1b6d0 100%); }
+  background: linear-gradient(90deg, #c1b6d0 0%, #ad93d1 47%, #c1b6d0 100%);
+  z-index: 2; }
 
 header {
   background-color: #5D536B; }
@@ -21,13 +22,89 @@ header {
     header nav div div ul li {
       display: inline-block; }
 
-footer div {
-  background-color: #5D536B; }
-  footer div div div div div {
-    list-style-type: none; }
+.hamburguesa {
+  background-color: #5D536B;
+  z-index: 4; }
 
-main h1 {
-  font-family: 'Noto Sans Balinese', sans-serif; }
+footer {
+  background-color: #5D536B; }
+
+.columnas-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-bottom: .5em; }
+  .columnas-footer .columna {
+    display: flex;
+    flex-direction: column; }
+    .columnas-footer .columna h4 {
+      padding-top: .5em;
+      text-align: center;
+      font-weight: bold; }
+    .columnas-footer .columna div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .columnas-footer .columna div a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.2s; }
+      .columnas-footer .columna div a:hover {
+        color: rgba(255, 255, 255, 0.55); }
+    .columnas-footer .columna .r-sociales {
+      display: flex;
+      flex-direction: row; }
+      .columnas-footer .columna .r-sociales div {
+        padding: 1rem; }
+
+main {
+  width: auto; }
+  main h2 {
+    padding-top: 1rem;
+    font-family: 'Noto Sans Balinese', sans-serif; }
+
+.datos {
+  height: 100%;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-around; }
+  .datos .caja {
+    height: auto;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s; }
+    .datos .caja img {
+      width: 100px;
+      height: 70px; }
+  .datos .caja:hover {
+    transform: scale(1.2); }
+
+.fotitos-inicio {
+  margin: 2em;
+  display: flex;
+  justify-content: space-around; }
+
+.titulo {
+  padding-top: .5em;
+  font-family: Kaushan Script; }
+
+.la-ropa {
+  height: auto;
+  width: auto; }
+
+.la-ropa div {
+  height: auto;
+  width: 16em;
+  margin: 1vw; }
+
+.carrito {
+  width: auto; }
 
 main div div h3 {
   font-size: medium;
@@ -36,49 +113,22 @@ main div div h3 {
 main div div p {
   font-family: 'Noto Sans', sans-serif; }
 
-main h1 {
-  font-family: 'Noto Sans Balinese', sans-serif; }
-
 main div div {
   font-size: medium;
   font-family: 'Noto Sans Balinese', sans-serif; }
 
-main h2 {
-  font-family: 'Noto Sans Balinese', sans-serif; }
-
-.datos {
-  background-color: #989FCE;
-  height: 12rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "candado tarjeta camion" "titulo-1 titulo-2 titulo-3" "subt-1 subt-2 subt-3"; }
-  .datos .candado img {
-    width: 100px;
-    height: 70px;
-    grid-area: candado; }
-  .datos .candado h3 {
-    grid-area: titulo-1; }
-  .datos .candado p {
-    grid-area: subt-1; }
-  .datos .tarjeta img {
-    width: 100px;
-    height: 70px;
-    grid-area: tarjeta; }
-  .datos .tarjeta h3 {
-    grid-area: titulo-2; }
-  .datos .tarjeta p {
-    grid-area: subt-2; }
-  .datos .camion img {
-    width: 100px;
-    height: 70px;
-    grid-area: camion; }
-  .datos .camion h3 {
-    grid-area: titulo-3; }
-  .datos .camion p {
-    grid-area: subt-3; }
-
-@media (max-width: 763px) {
+@media screen and (max-width: 740px) {
   .datos {
     height: 35rem;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; }
+  .columnas-footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (max-width: 920px) {
+  .fotitos-inicio {
+    flex-direction: column;
+    align-items: center; }
+    .fotitos-inicio div {
+      margin-bottom: 1em; } }

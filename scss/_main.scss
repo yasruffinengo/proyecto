@@ -1,10 +1,70 @@
-//preguntas frecuentes
+//todas?
 main{
-    h1{
+    width: auto;
+    h2{
+        padding-top: 1rem;
         font-family: 'Noto Sans Balinese', sans-serif;
     }
-    div{
+}
 
+
+
+
+.datos{
+    height:100%;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+    .caja{
+        height: auto;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.4s;
+        img{
+            @include tamaño-icons;
+        }
+    }
+    .caja:hover{
+        transform: scale(1.2);
+    }
+}
+
+.fotitos-inicio{
+    margin: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+///////////////productos
+
+.titulo{
+    padding-top: .5em;
+    font-family: Kaushan Script;
+}
+
+//tamaño cards de ropa
+.la-ropa{
+    height: auto;
+    width: auto;
+}
+.la-ropa div{
+    height: auto;
+    width: 16em;
+    margin: 1vw;
+}
+.carrito{
+    width: auto;
+}
+
+
+////////////////preguntas frecuentes
+main{
+    div{
         div{
             h3{
                 @include subtitulos;
@@ -17,83 +77,11 @@ main{
     }
 
 }
-
 //contactanos
 main{
-    h1{
-        font-family: 'Noto Sans Balinese', sans-serif;
-    }
     div{
         div{
             @include subtitulos;
-            label{
-            }
-            input{
-            }
-        }
-    }
-}
-
-//inicio, productos, outlet
-main{
-    h2{
-        font-family: 'Noto Sans Balinese', sans-serif;
-    }
-    div{
-        div{
-            div{
-                img{
-
-                }
-            }
-        }
-    }
-}
-
-//inicio
-.datos{
-    background-color: map-get($colores , "celeste");
-    height: 12rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:"candado tarjeta camion"
-                        "titulo-1 titulo-2 titulo-3"
-                        "subt-1 subt-2 subt-3";
-    .candado{
-        img{
-            @include tamaño-icons;
-            grid-area: candado;
-        }
-        h3{
-            grid-area: titulo-1;
-        }
-        p{
-            grid-area: subt-1;
-        }
-    }
-    .tarjeta{
-        img{
-            @include tamaño-icons;
-            grid-area: tarjeta;
-        }
-        h3{
-            grid-area: titulo-2;
-        }
-        p{
-            grid-area: subt-2;
-        }
-    }
-    .camion{
-        img{
-            @include tamaño-icons;
-            grid-area: camion;
-        }
-        h3{
-            grid-area: titulo-3;
-        }
-        p{
-            grid-area: subt-3;
         }
     }
 }

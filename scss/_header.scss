@@ -1,7 +1,6 @@
 header{
     background-color: map-get($colores, "violeta" );
     nav{
-
         div{
             background-color: map-get($colores , "violeta" );
             position: static;
@@ -11,8 +10,6 @@ header{
                     font-family: Kaushan Script;
                     color: map-get($colores, "celeste" );
                 }
-            }
-            button{
             }
             div{
                 ul{
@@ -26,4 +23,7 @@ header{
         }
     }
 }
-
+.hamburguesa{
+    background-color: map-get($colores, "violeta" );
+    z-index: 4;
+}

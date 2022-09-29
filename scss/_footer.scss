@@ -1,15 +1,38 @@
 footer{
-    div{
-        background-color: map-get($colores , "violeta" );
+    background-color: map-get($colores , "violeta" );
+}
+.columnas-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: .5em;
+    .columna{
+        display: flex;
+        flex-direction: column;
+        h4{
+            padding-top: .5em;
+            text-align: center;
+            font-weight:bold;
+        }
         div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a{
+                color:  black;
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+            a:hover{
+                color:  rgba(255, 255, 255, 0.55);
+            }
+        }
+        .r-sociales{
+            display: flex;
+            flex-direction: row;
             div{
-                div{
-                    span{
-                    }
-                    div{
-                        list-style-type: none
-                    }
-                }
+                padding: 1rem;
             }
         }
     }
