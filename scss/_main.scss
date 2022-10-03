@@ -8,7 +8,9 @@ main{
 }
 
 
-
+.ropa-inicio div{
+    margin-bottom: 2em;
+}
 
 .datos{
     height:100%;
@@ -34,12 +36,6 @@ main{
     }
 }
 
-.fotitos-inicio{
-    margin: 2em;
-    display: flex;
-    justify-content: space-around;
-}
-
 ///////////////productos
 
 .titulo{
@@ -54,8 +50,8 @@ main{
 }
 .la-ropa div{
     height: auto;
-    width: 16em;
-    margin: 1vw;
+    width: 15em;
+    margin-bottom: 2em;
 }
 .carrito{
     width: auto;

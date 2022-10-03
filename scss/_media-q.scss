@@ -1,4 +1,3 @@
-//tablet para abajo:
 @media screen and(max-width: 740px) {
     .datos{
         height: 35rem;
@@ -10,12 +9,29 @@
         align-items: center;
     }
 }
-@media only screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
     .fotitos-inicio{
         flex-direction: column;
         align-items: center;
         div{
             margin-bottom: 1em;
         }
+    }
+}
+
+@media only screen and(max-width:520px){ // PRODUCTOS cuando solo queda 1 card en la pantalla
+    .la-ropa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and(max-width:800px){
+    .ropa-inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
